@@ -352,6 +352,7 @@ h3 {
     font-size: clamp(3rem, 4vw, 4.2rem);
     border: 2px solid var(--color-white);
     letter-spacing: 5px;
+    line-height: 70px;
   }
 
   /* --------- Section Leader ---------- */
@@ -451,6 +452,10 @@ footer {
     align-items: center;
     margin-bottom: 30px;
   }
+
+  .footer__container--bottom{
+    display: flex;
+  }
   
   .footer__container--social {
     display: flex;
@@ -480,11 +485,12 @@ footer {
   .footer__nav--links li a {
     font-size: 1.05rem;
     transition: color 250ms;
-    padding: 0 40px;
+    padding: 0 40px 10px 40px;
   }
   
   .footer__nav--links li a:hover {
     color: var(--color-white);
+    text-decoration: underline;
   }
 
   .footer__nav--links li a:first-child{
@@ -493,6 +499,10 @@ footer {
   
   .footer__nav--links li a:not(:last-child) {
     margin-right: 30px;
+  }
+
+  .footer__nav--copyright{
+    margin-left: auto;
   }
 
   /* Media Queries */
